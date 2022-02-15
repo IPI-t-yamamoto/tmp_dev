@@ -1,0 +1,1466 @@
+Testing bot KATARAI_BasicUserQuestion
+Testing bot KATARAI_CharaConvChatting
+Testing bot KATARAI_Chatting
+- パターン発話テスト1-1 ... ok.
+- パターン発話テスト1-2 ... ok.
+- パターン発話テスト2-1 ... ok.
+- パターン発話テスト2-2 ... ok.
+- システムPDB発話テスト1 ... ok.
+- システムPDB発話テスト2 ... ok.
+- 知識QA1テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA2テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... fail. In assertion method "in", result "そうなんですね。。。　じゃあ、マラソン大会とか出たことありますか？" != expected "['日本の国花は桜だけど、法律で決められたものじゃないんだよ。', '「日本」って、公式には「にほん」、「にっぽん」、どちらの読みでもいいんだそうだよ。', '四季を感じるとき、やっぱり日本はいいなあって思うよね。']".
+- 知識QA3テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... fail. In assertion method "in", result "ふんふん。　そうだ、お気に入りの番組はありますか？" != expected "['日本の国花は桜だけど、法律で決められたものじゃないんだよ。', '「日本」って、公式には「にほん」、「にっぽん」、どちらの読みでもいいんだそうだよ。', '四季を感じるとき、やっぱり日本はいいなあって思うよね。']".
+- 知識QA4テスト（検索型の結果が出力されないことを確認） ... ok.
+- 知識QA5テスト（検索型の結果が出力されないことを確認） ... ok.
+- wiki型発話テスト1(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- wiki型発話テスト2(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 人手作成発話_doushi-1_2テスト※基礎解析がないとNG ... fail. In assertion method "in", result "あ、そうなんですか。　えっと、何か好きな漫画とかありますか？" != expected "['調子よく働いていると、休むのが恐くなることがありますよね。', '休みはなにも生み出さない。有名なサッカーの監督の言葉ですよ。', '５０分仕事や勉強をしたら、１０分休むのが効果的だそうですよ。']".
+- 人手作成発話_simple-1テスト ... ok.
+- 人手作成発話_simple-2テスト ... ok.
+- 人手作成発話_new_wordsテスト ... ok.
+- 人手作成発話_不適切発話削除テスト1 ... ok.
+- 人手作成発話_不適切発話削除テスト2 ... ok.
+- 人手作成発話_不適切発話削除テスト3 ... ok.
+- ユーザプロフィール入力チェック（nickname） ... ok.
+- ユーザプロフィール入力チェック（sex） ... ok.
+- ユーザプロフィール入力チェック（bloodtype） ... ok.
+- ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- ユーザプロフィール入力チェック（age） ... ok.
+- ユーザプロフィール入力チェック（constellations） ... ok.
+- ユーザプロフィール入力チェック（place） ... ok.
+- 雑談RDS発話テスト1※基礎解析がないとNG ... fail. In assertion method "in", result "えー、そうなんですか。　では、お酒はけっこう飲みますか？" != expected "['川之江に向かってます？', '川之江ってそうなんですか', '川之江に向かうんですね？']".
+- 雑談RDS発話テスト2※基礎解析がないとNG ... fail. In assertion method "in", result "そうなんだ。　そうだ、ファッションには気を使っていますか？" != expected "['コンポートは美味しいですよねえ', 'コンポートは甘いですよねえ', 'コンポートは美味しいですよね']".
+- 雑談RDS発話テスト3※基礎解析がないとNG ... fail. In assertion method "in", result "あ、なるほどなるほど。　じゃあ、犬はお好きですか？" != expected "['iphoneは電波が弱いです', 'ウケが悪いです', '感度が悪いです']".
+- 雑談RDS発話テスト4※基礎解析がないとNG ... fail. In assertion method "in", result "ええ。　うーんとね、暑さに弱いほうですか？" != expected "['家に置きましょ', '観葉植物を使いましょう', '観葉植物を選びましょうか？']".
+- 雑談RDS発話テスト5※基礎解析がないとNG ... fail. In assertion method "in", result "は。。。そうなんですね。。。　そうだ、旅行お好きですか？" != expected "['フリクションが大きくないかなあ', 'フリクションはそんなことないですよ', 'フリクションを使ってないですね']".
+- 【プロフィール】デフォルトキャラクタ ... ok.
+- 【プロフィール】akachanキャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "ハナって呼ばれています。" != expected "ハナって呼ばれていまちゅ".
+- 【プロフィール】kansaiキャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "名前はマリコです。" != expected "名前はマリコ".
+- 【プロフィール】surala2キャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "ネコ型ＡＩサポーターニャンロイド1号だよ。" != expected "ネコ型ＡＩサポーターニャンロイド1号にゃ".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "丸くてフワフワしたものが好きです。" != expected "丸くてフワフワしたものが好きです".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "内緒です。" != expected "内緒です".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "9がラッキーナンバーだと思っているんです。" != expected "9がラッキーナンバーだと思っています".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "占いに夢中になると、あっという間に時間が過ぎてしまいます。" != expected "占いに夢中になると、あっという間に時間が過ぎてしまいます".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "干支は、亥年です。" != expected "干支は、亥年です".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "アクティブに運動です。" != expected "アクティブに運動します".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "豆腐が苦手で食べられません。" != expected "豆腐が苦手で食べられません".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "東京都在住です。" != expected "東京都在住です".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "血液型はA型です。" != expected "血液型はA型です".
+- 【語尾】デフォルトキャラクタ ... ok.
+- 【語尾】akachanキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "たべたい" != expected "['おなじくでちゅ', 'たべたいでちゅ', 'わかまちゅ', 'ラーメンでちゅ', 'ラーメン食べたいでちゅ', '食べたいでちゅ', '食べまちょ', '同じくでちゅ']".
+- 【語尾】burikkoキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "同じく" != expected "['おなじくだぞっ', 'たべたいのだぁ', 'わかりまぁす', 'ラーメンだぞっ', 'ラーメン食べたいのだぁ', '食べたいのだぁ', '食べようよぉ', '同じくだぞっ']".
+- 【語尾】bushiキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "ラーメン" != expected "['おなじくじゃ', 'たべたいでござる', 'わかるでござる', 'ラーメンじゃ', 'ラーメン食べたいでござる', '食べたいでござる', '食べましょうぞ', '同じくじゃ']".
+- 【語尾】ehime1キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べよう" != expected "['おなじくやけん', 'たべたいんよ', 'わかるけん', 'ラーメンやけん', 'ラーメン食べたいんよ', '食べたいんよ', '食べよや', '同じくやけん']".
+- 【語尾】ehime2キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べよう" != expected "['おなじくやで', 'たべたいわ', 'わかるわ', 'ラーメンやで', 'ラーメン食べたいわ', '食べたいわ', '食べよや', '同じくやで']".
+- 【語尾】ehime3キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べたい" != expected "['おなじくやけん', 'たべたいわ', 'わかるけん', 'ラーメンやけん', 'ラーメン食べたいわ', '食べたいわ', '食べようや', '同じくやけん']".
+- 【語尾】fukushimaキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "おなじく" != expected "['おなじくだべ', 'たべたいど', 'わかるべさ', 'ラーメンだべ', 'ラーメン食べたいど', '食べたいど', '食べるべさ', '同じくだべ']".
+- 【語尾】gyaruキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "おなじく" != expected "['おなじくだよーん', 'たべたいしぃー', 'わかるよーん', 'ラーメンだよーん', 'ラーメン食べたいしぃー', '食べたいしぃー', '食べようじゃんー', '同じくだよーん']".
+- 【語尾】hakataキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "同じく" != expected "['おなじくばい', 'たべたかったと', 'わかっとる', 'ラーメンばい', 'ラーメン食べたかったと', '食べたかったと', '食べようや', '同じくばい']".
+- 【語尾】kansaiキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べたい" != expected "['おなじくやで', 'たべたいわ', 'わかるで', 'ラーメンやで', 'ラーメン食べたいわ', '食べたいわ', '食べよや', '同じくやで']".
+- 【語尾】maikoキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "おなじく" != expected "['おなじくどすえ', 'たべたいどす', 'わかまひょ', 'ラーメンどすえ', 'ラーメン食べたいどす', '食べたいどす', '食べまっしゃろ', '同じくどすえ']".
+- 【語尾】mieキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べよう" != expected "['おなじくやに', 'たべたいわ', 'わかるで', 'ラーメンやに', 'ラーメン食べたいわ', '食べたいわ', '食べに', '同じくやに']".
+- 【語尾】surala2キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "同じく" != expected "['おなじくにゃ', 'たべたいにゃ', 'わかるにゃ', 'ラーメンにゃ', 'ラーメン食べたいにゃ', '食べたいにゃ', '食べるにゃよ', '同じくにゃ']".
+- 【語尾】akachanキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよー御座います" != expected "['おはよう御座まちゅ', 'おはよー御座まちゅ']".
+- 【語尾】burikkoキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよう御座います" != expected "['おはよう御座いまぁす', 'おはよー御座いまぁす']".
+- 【語尾】bushiキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよう御座います" != expected "['おはよう御座るでござる', 'おはよー御座るでござる']".
+- 【語尾】ehime1キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るけん".
+- 【語尾】ehime2キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るわ".
+- 【語尾】ehime3キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るけん".
+- 【語尾】fukushimaキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】gyaruキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】hakataキャラクタ_こんばんは※基礎解析がないとNG ... ok.
+- 【語尾】kansaiキャラクタ_お疲れ様でございます※基礎解析がないとNG ... fail. In assertion method "in", result "おつー" != expected "['お疲れ様でござるで', 'お疲れ様でござったで', 'おつやで', 'おつかれーやで', 'お疲れ様', 'おつかれさまでござるで', 'お疲れさまでござったで', 'おつかれさま']".
+- 【語尾】maikoキャラクタ_おやすみです※基礎解析がないとNG ... ok.
+- 【語尾】mieキャラクタ_おやすみです※基礎解析がないとNG ... fail. In assertion method "in", result "おやすみー" != expected "['おやすみ', 'おやすみなさい', 'おやすみなさーい', 'おやすみーやに', 'おやすいやん', 'おやすみなさいー', 'おやすみなさいで', 'おやすみやに']".
+- 【語尾】surala2キャラクタ_〜ないで欲しいです※基礎解析がないとNG ... fail. In assertion method "in", result "そんなこと言わないで欲しいです…" != expected "そんなこと言わないで欲しいにゃ".
+- しりとりテスト01（開始） ... ok.
+- しりとりテスト01-1 ... ok.
+- しりとりテスト01-2 ... ok.
+- しりとりテスト01-3 ... ok.
+- しりとりテスト01（終了） ... ok.
+- しりとりテスト02（開始） ... ok.
+- しりとりテスト02-1 ... ok.
+- しりとりテスト02-2 ... ok.
+- しりとりテスト02-3 ... ok.
+- しりとりテスト02（終了） ... ok.
+- しりとりテスト03（開始） ... ok.
+- しりとりテスト03-1 ... ok.
+- しりとりテスト03-2 ... ok.
+- しりとりテスト03-3 ... ok.
+- しりとりテスト03（終了） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（nickname） ... fail. In assertion method "equal", result "（funassi）あなたの名前は可奈子さんですよね" != expected "（funassi）あなたの名前は可奈子さんなっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（sex） ... fail. In assertion method "equal", result "（funassi）あなたは女性ですよね" != expected "（funassi）あなたは女性なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（bloodtype） ... fail. In assertion method "equal", result "（funassi）あなたはB型ですよね" != expected "（funassi）あなたはB型なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（birthdateYMD） ... fail. In assertion method "in", result "（funassi）あなたは1999年5月10日生まれでしょうか" != expected "['（funassi）あなたは1999年5月10日生まれなっしー♪', '（funassi）あなたは1999年5月10日生まれだろうか']".
+- 【funassi/別ルート有】ーザプロフィール入力チェック（age） ... fail. In assertion method "equal", result "（funassi）あなたは29歳ですよね" != expected "（funassi）あなたは29歳なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（constellations） ... fail. In assertion method "equal", result "（funassi）あなたは双子座ですよね" != expected "（funassi）あなたは双子座なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（place） ... fail. In assertion method "equal", result "（funassi）あなたは愛媛に住んでいるのですよね" != expected "（funassi）あなたは愛媛に住んでるなっしー♪".
+- 【ojaru】ユーザプロフィール入力チェック（nickname） ... fail. In assertion method "equal", result "あなたの名前は可奈子さんですよね" != expected "そなたの名前は可奈子さんでおじゃる".
+- 【ojaru】ユーザプロフィール入力チェック（sex） ... fail. In assertion method "equal", result "あなたは女性ですよね" != expected "そなたはオナゴだよね".
+- 【ojaru】ユーザプロフィール入力チェック（bloodtype） ... fail. In assertion method "equal", result "あなたはB型ですよね" != expected "そなたはB型でおじゃる".
+- 【ojaru】ユーザプロフィール入力チェック（birthdateYMD） ... fail. In assertion method "in", result "あなたは1999年5月10日生まれでしょうか" != expected "['そなたは1999年5月10日生まれだろうか']".
+- 【ojaru】ユーザプロフィール入力チェック（age） ... fail. In assertion method "equal", result "あなたは29歳ですよね" != expected "そなたは29歳でおじゃる".
+- 【ojaru】ユーザプロフィール入力チェック（constellations） ... fail. In assertion method "equal", result "あなたは双子座ですよね" != expected "そなたは双子座でおじゃる".
+- 【ojaru】ユーザプロフィール入力チェック（place） ... fail. In assertion method "equal", result "あなたは愛媛に住んでいるのですよね" != expected "そなたは愛媛に住んでいるでおじゃる".
+- 【uranai】質問応答チェック1 ... fail. In assertion method "equal", result "初めまして、ようこそ。" != expected "初めます".
+- 【uranai】質問応答チェック2 ... fail. In assertion method "equal", result "ありがとう、嬉しいです。" != expected "ありがとう、嬉しいのです".
+- 【uranai】質問応答チェック3 ... fail. In assertion method "equal", result "必要です。努力も必要です。" != expected "必要です。努力も必要です".
+- 【uranai】質問応答チェック4 ... fail. In assertion method "equal", result "してないです。検討してみます。" != expected "していません。検討してみます".
+- 【uranai】質問応答チェック5 ... fail. In assertion method "equal", result "はい、１部屋あります。" != expected "はい、１部屋あります".
+- 【teacher】質問応答チェック1 ... fail. In assertion method "equal", result "こんにちは。午後もがんばっていきましょう。" != expected "こんにちは。午後もがんばっていくでしょう".
+- 【teacher】質問応答チェック2 ... fail. In assertion method "equal", result "とても気分がいいですね。昨夜しっかり眠れましたし。" != expected "とても気分がいいのです。昨夜しっかり眠れました".
+- 【teacher】質問応答チェック3 ... fail. In assertion method "equal", result "多くの生徒との出会いがあります。生徒たちからいつも刺激をもらえるし、とても恵まれていると思います。" != expected "多くの生徒との出会いがあります。生徒たちからいつも刺激をもらえるし、とても恵まれていると思います".
+- 【teacher】質問応答チェック4 ... fail. In assertion method "equal", result "辛めのカレーが食べたいですね。" != expected "辛めのカレーが食べたいのです".
+- 【teacher】質問応答チェック5 ... fail. In assertion method "equal", result "毎朝６時過ぎに起きています。今日もそうでしたよ。" != expected "毎朝６時過ぎに起きています。今日もそうでした".
+- 山手線ゲーム（かたらい）1-1 ... ok.
+- 山手線ゲーム（かたらい）1-2 ... ok.
+- 山手線ゲーム（かたらい）1-3 ... ok.
+- 山手線ゲーム（かたらい）1-4 ... ok.
+- 山手線ゲーム（かたらい）1-5 ... ok.
+- 山手線ゲーム（かたらい）2-1 ... ok.
+- 山手線ゲーム（かたらい）2-2 ... ok.
+- 山手線ゲーム（かたらい）2-3 ... ok.
+- 山手線ゲーム（かたらい）2-4 ... ok.
+- 山手線ゲーム（かたらい）2-5 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-1 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-2 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-3 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-4 ... ok.
+- 異常系001（エラーにならないことを確認） ... ok.
+- 異常系002（エラーにならないことを確認） ... ok.
+- 異常系003（エラーにならないことを確認） ... ok.
+- 異常系004（エラーにならないことを確認） ... ok.
+- 異常系005（エラーにならないことを確認） ... ok.
+- 異常系006（エラーにならないことを確認） ... ok.
+- 異常系007（エラーにならないことを確認） ... ok.
+- 異常系008（エラーにならないことを確認） ... ok.
+- 異常系009（エラーにならないことを確認） ... ok.
+- 異常系010（エラーにならないことを確認） ... ok.
+- 異常系011（エラーにならないことを確認） ... ok.
+- 異常系012（エラーにならないことを確認） ... ok.
+- 異常系013（エラーにならないことを確認） ... ok.
+- 異常系014（エラーにならないことを確認） ... ok.
+- 異常系015（エラーにならないことを確認） ... ok.
+- 異常系016（エラーにならないことを確認） ... ok.
+- 異常系017（エラーにならないことを確認） ... ok.
+- 異常系018（エラーにならないことを確認） ... ok.
+- 異常系019（エラーにならないことを確認） ... ok.
+- 異常系020（エラーにならないことを確認） ... ok.
+- 異常系021（エラーにならないことを確認） ... ok.
+- 異常系022（エラーにならないことを確認） ... ok.
+- 異常系023（エラーにならないことを確認） ... ok.
+- 異常系024（エラーにならないことを確認） ... ok.
+- 異常系025（エラーにならないことを確認） ... ok.
+- 異常系026（エラーにならないことを確認） ... ok.
+- 異常系027（エラーにならないことを確認） ... ok.
+- 異常系028（エラーにならないことを確認） ... ok.
+- 異常系029（エラーにならないことを確認） ... ok.
+- 異常系030（エラーにならないことを確認） ... ok.
+- 異常系031（エラーにならないことを確認） ... ok.
+- 異常系032（エラーにならないことを確認） ... ok.
+- 異常系033（エラーにならないことを確認） ... ok.
+- 異常系034（エラーにならないことを確認） ... ok.
+- 異常系035（エラーにならないことを確認） ... ok.
+- 異常系036（エラーにならないことを確認） ... ok.
+- 異常系037（エラーにならないことを確認） ... ok.
+- 異常系038（エラーにならないことを確認） ... ok.
+- 異常系039（エラーにならないことを確認） ... ok.
+- 異常系040（エラーにならないことを確認） ... ok.
+- 異常系041（エラーにならないことを確認） ... ok.
+- 異常系042（エラーにならないことを確認） ... ok.
+- 異常系043（エラーにならないことを確認） ... ok.
+- 異常系044（エラーにならないことを確認） ... ok.
+- 異常系045（エラーにならないことを確認） ... ok.
+- 異常系046（エラーにならないことを確認） ... ok.
+- 異常系047（エラーにならないことを確認） ... ok.
+- 異常系048（エラーにならないことを確認） ... ok.
+- 異常系049（エラーにならないことを確認） ... ok.
+- 異常系050（エラーにならないことを確認） ... ok.
+- 異常系051（エラーにならないことを確認） ... ok.
+- 異常系052（エラーにならないことを確認） ... ok.
+- 異常系053（エラーにならないことを確認） ... ok.
+- 異常系054（エラーにならないことを確認） ... ok.
+- 異常系055（エラーにならないことを確認） ... ok.
+- 異常系056（エラーにならないことを確認） ... ok.
+- 異常系057（エラーにならないことを確認） ... ok.
+- 異常系058（エラーにならないことを確認） ... ok.
+- eスポーツ ... ok.
+- 半端ないって ... ok.
+- おっさんずラブ ... ok.
+- 心理テスト開始 ... ok.
+- 心理テストジャンル選択 ... ok.
+- 心理テスト回答選択 ... ok.
+- 心理テスト強制終了 ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+Testing bot KATARAI_ChattingApi
+Testing bot KATARAI_ChattingNoUpdbUtt
+- パターン発話テスト1-1 ... ok.
+- パターン発話テスト1-2 ... ok.
+- パターン発話テスト2-1 ... ok.
+- パターン発話テスト2-2 ... ok.
+- システムPDB発話テスト1 ... ok.
+- システムPDB発話テスト2 ... ok.
+- 知識QA1テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA2テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... fail. In assertion method "in", result "あ、なるほどなるほど。　じゃあ、フェスなどは行かれたことありますか？" != expected "['日本の国花は桜だけど、法律で決められたものじゃないんだよ。', '「日本」って、公式には「にほん」、「にっぽん」、どちらの読みでもいいんだそうだよ。', '四季を感じるとき、やっぱり日本はいいなあって思うよね。']".
+- 知識QA3テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... fail. In assertion method "in", result "なんと。　うーんとね、好きな食べ物はなんですか？" != expected "['日本の国花は桜だけど、法律で決められたものじゃないんだよ。', '「日本」って、公式には「にほん」、「にっぽん」、どちらの読みでもいいんだそうだよ。', '四季を感じるとき、やっぱり日本はいいなあって思うよね。']".
+- 知識QA4テスト（検索型の結果が出力されないことを確認） ... ok.
+- 知識QA5テスト（検索型の結果が出力されないことを確認） ... ok.
+- wiki型発話テスト1(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- wiki型発話テスト2(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 人手作成発話_doushi-1_2テスト※基礎解析がないとNG ... fail. In assertion method "in", result "そうですね…。　じゃあ、好きな芸能人はいますか？" != expected "['調子よく働いていると、休むのが恐くなることがありますよね。', '休みはなにも生み出さない。有名なサッカーの監督の言葉ですよ。', '５０分仕事や勉強をしたら、１０分休むのが効果的だそうですよ。']".
+- 人手作成発話_simple-1テスト ... ok.
+- 人手作成発話_simple-2テスト ... ok.
+- 人手作成発話_new_wordsテスト ... ok.
+- 人手作成発話_不適切発話削除テスト1 ... ok.
+- 人手作成発話_不適切発話削除テスト2 ... ok.
+- 人手作成発話_不適切発話削除テスト3 ... ok.
+- ユーザプロフィール入力チェック（nickname） ... ok.
+- ユーザプロフィール入力チェック（sex） ... ok.
+- ユーザプロフィール入力チェック（bloodtype） ... ok.
+- ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- ユーザプロフィール入力チェック（age） ... ok.
+- ユーザプロフィール入力チェック（constellations） ... ok.
+- ユーザプロフィール入力チェック（place） ... ok.
+- 雑談RDS発話テスト1※基礎解析がないとNG ... fail. In assertion method "in", result "へぇ。そうなんですね。　ところで、アニメはご覧になりますか？" != expected "['川之江に向かってます？', '川之江ってそうなんですか', '川之江に向かうんですね？']".
+- 雑談RDS発話テスト2※基礎解析がないとNG ... fail. In assertion method "in", result "へぇ。　えっと、最近気になるニュースなどはありますか？" != expected "['コンポートは美味しいですよねえ', 'コンポートは甘いですよねえ', 'コンポートは美味しいですよね']".
+- 雑談RDS発話テスト3※基礎解析がないとNG ... fail. In assertion method "in", result "へぇー！　そうだ、どういう楽しみ方をされますか？" != expected "['iphoneは電波が弱いです', 'ウケが悪いです', '感度が悪いです']".
+- 雑談RDS発話テスト4※基礎解析がないとNG ... fail. In assertion method "in", result "はあ、なるほど。　そうだ、最近特に楽しかったことなどありますか？" != expected "['家に置きましょ', '観葉植物を使いましょう', '観葉植物を選びましょうか？']".
+- 雑談RDS発話テスト5※基礎解析がないとNG ... fail. In assertion method "in", result "そうですかあ！　ところで、サッカーはみますか？" != expected "['フリクションが大きくないかなあ', 'フリクションはそんなことないですよ', 'フリクションを使ってないですね']".
+- 【プロフィール】デフォルトキャラクタ ... ok.
+- 【プロフィール】akachanキャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "ハナって呼ばれています。" != expected "ハナって呼ばれていまちゅ".
+- 【プロフィール】kansaiキャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "名前はマリコです。" != expected "名前はマリコ".
+- 【プロフィール】surala2キャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "ネコ型ＡＩサポーターニャンロイド1号だよ。" != expected "ネコ型ＡＩサポーターニャンロイド1号にゃ".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "丸くてフワフワしたものが好きです。" != expected "丸くてフワフワしたものが好きです".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "内緒です。" != expected "内緒です".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "9がラッキーナンバーだと思っているんです。" != expected "9がラッキーナンバーだと思っています".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "占いに夢中になると、あっという間に時間が過ぎてしまいます。" != expected "占いに夢中になると、あっという間に時間が過ぎてしまいます".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "干支は、亥年です。" != expected "干支は、亥年です".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "アクティブに運動です。" != expected "アクティブに運動します".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "豆腐が苦手で食べられません。" != expected "豆腐が苦手で食べられません".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "東京都在住です。" != expected "東京都在住です".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "血液型はA型です。" != expected "血液型はA型です".
+- 【語尾】デフォルトキャラクタ ... ok.
+- 【語尾】akachanキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "同じく" != expected "['おなじくでちゅ', 'たべたいでちゅ', 'わかまちゅ', 'ラーメンでちゅ', 'ラーメン食べたいでちゅ', '食べたいでちゅ', '食べまちょ', '同じくでちゅ']".
+- 【語尾】burikkoキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べたい" != expected "['おなじくだぞっ', 'たべたいのだぁ', 'わかりまぁす', 'ラーメンだぞっ', 'ラーメン食べたいのだぁ', '食べたいのだぁ', '食べようよぉ', '同じくだぞっ']".
+- 【語尾】bushiキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "おなじく" != expected "['おなじくじゃ', 'たべたいでござる', 'わかるでござる', 'ラーメンじゃ', 'ラーメン食べたいでござる', '食べたいでござる', '食べましょうぞ', '同じくじゃ']".
+- 【語尾】ehime1キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "おなじく" != expected "['おなじくやけん', 'たべたいんよ', 'わかるけん', 'ラーメンやけん', 'ラーメン食べたいんよ', '食べたいんよ', '食べよや', '同じくやけん']".
+- 【語尾】ehime2キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "わかる" != expected "['おなじくやで', 'たべたいわ', 'わかるわ', 'ラーメンやで', 'ラーメン食べたいわ', '食べたいわ', '食べよや', '同じくやで']".
+- 【語尾】ehime3キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "同じく" != expected "['おなじくやけん', 'たべたいわ', 'わかるけん', 'ラーメンやけん', 'ラーメン食べたいわ', '食べたいわ', '食べようや', '同じくやけん']".
+- 【語尾】fukushimaキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べたい" != expected "['おなじくだべ', 'たべたいど', 'わかるべさ', 'ラーメンだべ', 'ラーメン食べたいど', '食べたいど', '食べるべさ', '同じくだべ']".
+- 【語尾】gyaruキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "同じく" != expected "['おなじくだよーん', 'たべたいしぃー', 'わかるよーん', 'ラーメンだよーん', 'ラーメン食べたいしぃー', '食べたいしぃー', '食べようじゃんー', '同じくだよーん']".
+- 【語尾】hakataキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "たべたい" != expected "['おなじくばい', 'たべたかったと', 'わかっとる', 'ラーメンばい', 'ラーメン食べたかったと', '食べたかったと', '食べようや', '同じくばい']".
+- 【語尾】kansaiキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "わかる" != expected "['おなじくやで', 'たべたいわ', 'わかるで', 'ラーメンやで', 'ラーメン食べたいわ', '食べたいわ', '食べよや', '同じくやで']".
+- 【語尾】maikoキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "ラーメン食べたい" != expected "['おなじくどすえ', 'たべたいどす', 'わかまひょ', 'ラーメンどすえ', 'ラーメン食べたいどす', '食べたいどす', '食べまっしゃろ', '同じくどすえ']".
+- 【語尾】mieキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "ラーメン食べたい" != expected "['おなじくやに', 'たべたいわ', 'わかるで', 'ラーメンやに', 'ラーメン食べたいわ', '食べたいわ', '食べに', '同じくやに']".
+- 【語尾】surala2キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "ラーメン食べたい" != expected "['おなじくにゃ', 'たべたいにゃ', 'わかるにゃ', 'ラーメンにゃ', 'ラーメン食べたいにゃ', '食べたいにゃ', '食べるにゃよ', '同じくにゃ']".
+- 【語尾】akachanキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよう御座います" != expected "['おはよう御座まちゅ', 'おはよー御座まちゅ']".
+- 【語尾】burikkoキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよー御座います" != expected "['おはよう御座いまぁす', 'おはよー御座いまぁす']".
+- 【語尾】bushiキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよう御座います" != expected "['おはよう御座るでござる', 'おはよー御座るでござる']".
+- 【語尾】ehime1キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るけん".
+- 【語尾】ehime2キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るわ".
+- 【語尾】ehime3キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るけん".
+- 【語尾】fukushimaキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】gyaruキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】hakataキャラクタ_こんばんは※基礎解析がないとNG ... ok.
+- 【語尾】kansaiキャラクタ_お疲れ様でございます※基礎解析がないとNG ... fail. In assertion method "in", result "お疲れ様でございます" != expected "['お疲れ様でござるで', 'お疲れ様でござったで', 'おつやで', 'おつかれーやで', 'お疲れ様', 'おつかれさまでござるで', 'お疲れさまでござったで', 'おつかれさま']".
+- 【語尾】maikoキャラクタ_おやすみです※基礎解析がないとNG ... ok.
+- 【語尾】mieキャラクタ_おやすみです※基礎解析がないとNG ... ok.
+- 【語尾】surala2キャラクタ_〜ないで欲しいです※基礎解析がないとNG ... fail. In assertion method "in", result "そんなこと言わないで欲しいです…" != expected "そんなこと言わないで欲しいにゃ".
+- しりとりテスト01（開始） ... ok.
+- しりとりテスト01-1 ... ok.
+- しりとりテスト01-2 ... ok.
+- しりとりテスト01-3 ... ok.
+- しりとりテスト01（終了） ... ok.
+- しりとりテスト02（開始） ... ok.
+- しりとりテスト02-1 ... ok.
+- しりとりテスト02-2 ... ok.
+- しりとりテスト02-3 ... ok.
+- しりとりテスト02（終了） ... ok.
+- しりとりテスト03（開始） ... ok.
+- しりとりテスト03-1 ... ok.
+- しりとりテスト03-2 ... ok.
+- しりとりテスト03-3 ... ok.
+- しりとりテスト03（終了） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（nickname） ... fail. In assertion method "equal", result "（funassi）あなたの名前は可奈子さんですよね" != expected "（funassi）あなたの名前は可奈子さんなっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（sex） ... fail. In assertion method "equal", result "（funassi）あなたは女性ですよね" != expected "（funassi）あなたは女性なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（bloodtype） ... fail. In assertion method "equal", result "（funassi）あなたはB型ですよね" != expected "（funassi）あなたはB型なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（birthdateYMD） ... fail. In assertion method "in", result "（funassi）あなたは1999年5月10日生まれでしょうか" != expected "['（funassi）あなたは1999年5月10日生まれなっしー♪', '（funassi）あなたは1999年5月10日生まれだろうか']".
+- 【funassi/別ルート有】ーザプロフィール入力チェック（age） ... fail. In assertion method "equal", result "（funassi）あなたは29歳ですよね" != expected "（funassi）あなたは29歳なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（constellations） ... fail. In assertion method "equal", result "（funassi）あなたは双子座ですよね" != expected "（funassi）あなたは双子座なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（place） ... fail. In assertion method "equal", result "（funassi）あなたは愛媛に住んでいるのですよね" != expected "（funassi）あなたは愛媛に住んでるなっしー♪".
+- 【ojaru】ユーザプロフィール入力チェック（nickname） ... fail. In assertion method "equal", result "あなたの名前は可奈子さんですよね" != expected "そなたの名前は可奈子さんでおじゃる".
+- 【ojaru】ユーザプロフィール入力チェック（sex） ... fail. In assertion method "equal", result "あなたは女性ですよね" != expected "そなたはオナゴだよね".
+- 【ojaru】ユーザプロフィール入力チェック（bloodtype） ... fail. In assertion method "equal", result "あなたはB型ですよね" != expected "そなたはB型でおじゃる".
+- 【ojaru】ユーザプロフィール入力チェック（birthdateYMD） ... fail. In assertion method "in", result "あなたは1999年5月10日生まれでしょうか" != expected "['そなたは1999年5月10日生まれだろうか']".
+- 【ojaru】ユーザプロフィール入力チェック（age） ... fail. In assertion method "equal", result "あなたは29歳ですよね" != expected "そなたは29歳でおじゃる".
+- 【ojaru】ユーザプロフィール入力チェック（constellations） ... fail. In assertion method "equal", result "あなたは双子座ですよね" != expected "そなたは双子座でおじゃる".
+- 【ojaru】ユーザプロフィール入力チェック（place） ... fail. In assertion method "equal", result "あなたは愛媛に住んでいるのですよね" != expected "そなたは愛媛に住んでいるでおじゃる".
+- 【uranai】質問応答チェック1 ... fail. In assertion method "equal", result "初めまして、ようこそ。" != expected "初めます".
+- 【uranai】質問応答チェック2 ... fail. In assertion method "equal", result "ありがとう、嬉しいです。" != expected "ありがとう、嬉しいのです".
+- 【uranai】質問応答チェック3 ... fail. In assertion method "equal", result "必要です。努力も必要です。" != expected "必要です。努力も必要です".
+- 【uranai】質問応答チェック4 ... fail. In assertion method "equal", result "してないです。検討してみます。" != expected "していません。検討してみます".
+- 【uranai】質問応答チェック5 ... fail. In assertion method "equal", result "はい、１部屋あります。" != expected "はい、１部屋あります".
+- 【teacher】質問応答チェック1 ... fail. In assertion method "equal", result "こんにちは。午後もがんばっていきましょう。" != expected "こんにちは。午後もがんばっていくでしょう".
+- 【teacher】質問応答チェック2 ... fail. In assertion method "equal", result "とても気分がいいですね。昨夜しっかり眠れましたし。" != expected "とても気分がいいのです。昨夜しっかり眠れました".
+- 【teacher】質問応答チェック3 ... fail. In assertion method "equal", result "多くの生徒との出会いがあります。生徒たちからいつも刺激をもらえるし、とても恵まれていると思います。" != expected "多くの生徒との出会いがあります。生徒たちからいつも刺激をもらえるし、とても恵まれていると思います".
+- 【teacher】質問応答チェック4 ... fail. In assertion method "equal", result "辛めのカレーが食べたいですね。" != expected "辛めのカレーが食べたいのです".
+- 【teacher】質問応答チェック5 ... fail. In assertion method "equal", result "毎朝６時過ぎに起きています。今日もそうでしたよ。" != expected "毎朝６時過ぎに起きています。今日もそうでした".
+- 山手線ゲーム（かたらい）1-1 ... ok.
+- 山手線ゲーム（かたらい）1-2 ... ok.
+- 山手線ゲーム（かたらい）1-3 ... ok.
+- 山手線ゲーム（かたらい）1-4 ... ok.
+- 山手線ゲーム（かたらい）1-5 ... ok.
+- 山手線ゲーム（かたらい）2-1 ... ok.
+- 山手線ゲーム（かたらい）2-2 ... ok.
+- 山手線ゲーム（かたらい）2-3 ... ok.
+- 山手線ゲーム（かたらい）2-4 ... ok.
+- 山手線ゲーム（かたらい）2-5 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-1 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-2 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-3 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-4 ... ok.
+- NoUpdbUttボットにユーザ情報を登録 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか1回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか2回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか3回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか4回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか5回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか6回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか7回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか8回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか9回目 ... ok.
+- NoUpdbUttボットがユーザ情報を発話しないか10回目 ... ok.
+- eスポーツ ... ok.
+- 半端ないって ... ok.
+- おっさんずラブ ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 心理テスト開始 ... ok.
+- 心理テストジャンル選択 ... ok.
+- 心理テスト回答選択 ... ok.
+- 心理テスト強制終了 ... ok.
+Testing bot KATARAI_ChattingRandom
+- パターン発話テスト1-1 ... ok.
+- パターン発話テスト1-2 ... ok.
+- パターン発話テスト2-1 ... ok.
+- パターン発話テスト2-2 ... ok.
+- システムPDB発話テスト1 ... ok.
+- システムPDB発話テスト2 ... ok.
+- 知識QA1テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA2テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... fail. In assertion method "in", result "そうなんですね。　ランダム文０２" != expected "['日本の国花は桜だけど、法律で決められたものじゃないんだよ。', '「日本」って、公式には「にほん」、「にっぽん」、どちらの読みでもいいんだそうだよ。', '四季を感じるとき、やっぱり日本はいいなあって思うよね。']".
+- 知識QA3テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... fail. In assertion method "in", result "えー、そうなんですか。　ランダム文０３" != expected "['日本の国花は桜だけど、法律で決められたものじゃないんだよ。', '「日本」って、公式には「にほん」、「にっぽん」、どちらの読みでもいいんだそうだよ。', '四季を感じるとき、やっぱり日本はいいなあって思うよね。']".
+- 知識QA4テスト（検索型の結果が出力されないことを確認） ... ok.
+- 知識QA5テスト（検索型の結果が出力されないことを確認） ... ok.
+- wiki型発話テスト1(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- wiki型発話テスト2(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 人手作成発話_doushi-1_2テスト※基礎解析がないとNG ... fail. In assertion method "in", result "そうなの。　ランダム文０４" != expected "['調子よく働いていると、休むのが恐くなることがありますよね。', '休みはなにも生み出さない。有名なサッカーの監督の言葉ですよ。', '５０分仕事や勉強をしたら、１０分休むのが効果的だそうですよ。']".
+- 人手作成発話_simple-1テスト ... ok.
+- 人手作成発話_simple-2テスト ... ok.
+- 人手作成発話_new_wordsテスト ... ok.
+- 人手作成発話_不適切発話削除テスト1 ... ok.
+- 人手作成発話_不適切発話削除テスト2 ... ok.
+- 人手作成発話_不適切発話削除テスト3 ... ok.
+- ユーザプロフィール入力チェック（nickname） ... ok.
+- ユーザプロフィール入力チェック（sex） ... ok.
+- ユーザプロフィール入力チェック（bloodtype） ... ok.
+- ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- ユーザプロフィール入力チェック（age） ... ok.
+- ユーザプロフィール入力チェック（constellations） ... ok.
+- ユーザプロフィール入力チェック（place） ... ok.
+- 雑談RDS発話テスト1※基礎解析がないとNG ... fail. In assertion method "in", result "ほうほう！　ランダム文０１" != expected "['川之江に向かってます？', '川之江ってそうなんですか', '川之江に向かうんですね？']".
+- 雑談RDS発話テスト2※基礎解析がないとNG ... fail. In assertion method "in", result "そうなの。　ランダム文０１" != expected "['コンポートは美味しいですよねえ', 'コンポートは甘いですよねえ', 'コンポートは美味しいですよね']".
+- 雑談RDS発話テスト3※基礎解析がないとNG ... fail. In assertion method "in", result "それはそれは・・　ランダム文０１" != expected "['iphoneは電波が弱いです', 'ウケが悪いです', '感度が悪いです']".
+- 雑談RDS発話テスト4※基礎解析がないとNG ... fail. In assertion method "in", result "なるほどなるほど！　ランダム文０１" != expected "['家に置きましょ', '観葉植物を使いましょう', '観葉植物を選びましょうか？']".
+- 雑談RDS発話テスト5※基礎解析がないとNG ... fail. In assertion method "in", result "そうなんだ。。。　ランダム文０２" != expected "['フリクションが大きくないかなあ', 'フリクションはそんなことないですよ', 'フリクションを使ってないですね']".
+- 【プロフィール】デフォルトキャラクタ ... ok.
+- 【プロフィール】akachanキャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "ハナって呼ばれています。" != expected "ハナって呼ばれていまちゅ".
+- 【プロフィール】kansaiキャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "名前はマリコです。" != expected "名前はマリコ".
+- 【プロフィール】surala2キャラクタ※基礎解析がないとNG ... fail. In assertion method "equal", result "ネコ型ＡＩサポーターニャンロイド1号だよ。" != expected "ネコ型ＡＩサポーターニャンロイド1号にゃ".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "丸くてフワフワしたものが好きです。" != expected "丸くてフワフワしたものが好きです".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "内緒です。" != expected "内緒です".
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "9がラッキーナンバーだと思っているんです。" != expected "9がラッキーナンバーだと思っています".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "占いに夢中になると、あっという間に時間が過ぎてしまいます。" != expected "占いに夢中になると、あっという間に時間が過ぎてしまいます".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "干支は、亥年です。" != expected "干支は、亥年です".
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "アクティブに運動です。" != expected "アクティブに運動します".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "豆腐が苦手で食べられません。" != expected "豆腐が苦手で食べられません".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "東京都在住です。" != expected "東京都在住です".
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... fail. In assertion method "equal", result "血液型はA型です。" != expected "血液型はA型です".
+- 【語尾】デフォルトキャラクタ ... ok.
+- 【語尾】akachanキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "わかる" != expected "['おなじくでちゅ', 'たべたいでちゅ', 'わかまちゅ', 'ラーメンでちゅ', 'ラーメン食べたいでちゅ', '食べたいでちゅ', '食べまちょ', '同じくでちゅ']".
+- 【語尾】burikkoキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "わかる" != expected "['おなじくだぞっ', 'たべたいのだぁ', 'わかりまぁす', 'ラーメンだぞっ', 'ラーメン食べたいのだぁ', '食べたいのだぁ', '食べようよぉ', '同じくだぞっ']".
+- 【語尾】bushiキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "ラーメン食べたい" != expected "['おなじくじゃ', 'たべたいでござる', 'わかるでござる', 'ラーメンじゃ', 'ラーメン食べたいでござる', '食べたいでござる', '食べましょうぞ', '同じくじゃ']".
+- 【語尾】ehime1キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "おなじく" != expected "['おなじくやけん', 'たべたいんよ', 'わかるけん', 'ラーメンやけん', 'ラーメン食べたいんよ', '食べたいんよ', '食べよや', '同じくやけん']".
+- 【語尾】ehime2キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "ラーメン" != expected "['おなじくやで', 'たべたいわ', 'わかるわ', 'ラーメンやで', 'ラーメン食べたいわ', '食べたいわ', '食べよや', '同じくやで']".
+- 【語尾】ehime3キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べよう" != expected "['おなじくやけん', 'たべたいわ', 'わかるけん', 'ラーメンやけん', 'ラーメン食べたいわ', '食べたいわ', '食べようや', '同じくやけん']".
+- 【語尾】fukushimaキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べよう" != expected "['おなじくだべ', 'たべたいど', 'わかるべさ', 'ラーメンだべ', 'ラーメン食べたいど', '食べたいど', '食べるべさ', '同じくだべ']".
+- 【語尾】gyaruキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "おなじく" != expected "['おなじくだよーん', 'たべたいしぃー', 'わかるよーん', 'ラーメンだよーん', 'ラーメン食べたいしぃー', '食べたいしぃー', '食べようじゃんー', '同じくだよーん']".
+- 【語尾】hakataキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "わかる" != expected "['おなじくばい', 'たべたかったと', 'わかっとる', 'ラーメンばい', 'ラーメン食べたかったと', '食べたかったと', '食べようや', '同じくばい']".
+- 【語尾】kansaiキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "わかる" != expected "['おなじくやで', 'たべたいわ', 'わかるで', 'ラーメンやで', 'ラーメン食べたいわ', '食べたいわ', '食べよや', '同じくやで']".
+- 【語尾】maikoキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "食べよう" != expected "['おなじくどすえ', 'たべたいどす', 'わかまひょ', 'ラーメンどすえ', 'ラーメン食べたいどす', '食べたいどす', '食べまっしゃろ', '同じくどすえ']".
+- 【語尾】mieキャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "同じく" != expected "['おなじくやに', 'たべたいわ', 'わかるで', 'ラーメンやに', 'ラーメン食べたいわ', '食べたいわ', '食べに', '同じくやに']".
+- 【語尾】surala2キャラクタ※基礎解析がないとNG ... fail. In assertion method "in", result "わかる" != expected "['おなじくにゃ', 'たべたいにゃ', 'わかるにゃ', 'ラーメンにゃ', 'ラーメン食べたいにゃ', '食べたいにゃ', '食べるにゃよ', '同じくにゃ']".
+- 【語尾】akachanキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよう御座います" != expected "['おはよう御座まちゅ', 'おはよー御座まちゅ']".
+- 【語尾】burikkoキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよー御座います" != expected "['おはよう御座いまぁす', 'おはよー御座いまぁす']".
+- 【語尾】bushiキャラクタ_おはよう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "おはよー御座います" != expected "['おはよう御座るでござる', 'おはよー御座るでござる']".
+- 【語尾】ehime1キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るけん".
+- 【語尾】ehime2キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るわ".
+- 【語尾】ehime3キャラクタ_ありがとう御座います※基礎解析がないとNG ... fail. In assertion method "in", result "ありがとう御座います" != expected "ありがとう御座るけん".
+- 【語尾】fukushimaキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】gyaruキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】hakataキャラクタ_こんばんは※基礎解析がないとNG ... ok.
+- 【語尾】kansaiキャラクタ_お疲れ様でございます※基礎解析がないとNG ... ok.
+- 【語尾】maikoキャラクタ_おやすみです※基礎解析がないとNG ... fail. In assertion method "in", result "おやすみー" != expected "['おやすみ', 'おやすみなさい', 'おやすみなさーい', 'おやすみーどすえ', 'おやすしおすえ', 'おやすみなさいー', 'おやすみなさいまひょ', 'おやすみどすえ']".
+- 【語尾】mieキャラクタ_おやすみです※基礎解析がないとNG ... ok.
+- 【語尾】surala2キャラクタ_〜ないで欲しいです※基礎解析がないとNG ... fail. In assertion method "in", result "そんなこと言わないで欲しいです…" != expected "そんなこと言わないで欲しいにゃ".
+- しりとりテスト01（開始） ... ok.
+- しりとりテスト01-1 ... ok.
+- しりとりテスト01-2 ... ok.
+- しりとりテスト01-3 ... ok.
+- しりとりテスト01（終了） ... ok.
+- しりとりテスト02（開始） ... ok.
+- しりとりテスト02-1 ... ok.
+- しりとりテスト02-2 ... ok.
+- しりとりテスト02-3 ... ok.
+- しりとりテスト02（終了） ... ok.
+- しりとりテスト03（開始） ... ok.
+- しりとりテスト03-1 ... ok.
+- しりとりテスト03-2 ... ok.
+- しりとりテスト03-3 ... ok.
+- しりとりテスト03（終了） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（nickname） ... fail. In assertion method "equal", result "（funassi）あなたの名前は可奈子さんですよね" != expected "（funassi）あなたの名前は可奈子さんなっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（sex） ... fail. In assertion method "equal", result "（funassi）あなたは女性ですよね" != expected "（funassi）あなたは女性なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（bloodtype） ... fail. In assertion method "equal", result "（funassi）あなたはB型ですよね" != expected "（funassi）あなたはB型なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（birthdateYMD） ... fail. In assertion method "in", result "（funassi）あなたは1999年5月10日生まれでしょうか" != expected "['（funassi）あなたは1999年5月10日生まれなっしー♪', '（funassi）あなたは1999年5月10日生まれだろうか']".
+- 【funassi/別ルート有】ーザプロフィール入力チェック（age） ... fail. In assertion method "equal", result "（funassi）あなたは29歳ですよね" != expected "（funassi）あなたは29歳なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（constellations） ... fail. In assertion method "equal", result "（funassi）あなたは双子座ですよね" != expected "（funassi）あなたは双子座なっしー♪".
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（place） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（sex） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（age） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（place） ... ok.
+- 【uranai】質問応答チェック1 ... ok.
+- 【uranai】質問応答チェック2 ... ok.
+- 【uranai】質問応答チェック3 ... ok.
+- 【uranai】質問応答チェック4 ... ok.
+- 【uranai】質問応答チェック5 ... ok.
+- 【teacher】質問応答チェック1 ... ok.
+- 【teacher】質問応答チェック2 ... ok.
+- 【teacher】質問応答チェック3 ... ok.
+- 【teacher】質問応答チェック4 ... ok.
+- 【teacher】質問応答チェック5 ... ok.
+- 山手線ゲーム（かたらい）1-1 ... ok.
+- 山手線ゲーム（かたらい）1-2 ... ok.
+- 山手線ゲーム（かたらい）1-3 ... ok.
+- 山手線ゲーム（かたらい）1-4 ... ok.
+- 山手線ゲーム（かたらい）1-5 ... ok.
+- 山手線ゲーム（かたらい）2-1 ... ok.
+- 山手線ゲーム（かたらい）2-2 ... ok.
+- 山手線ゲーム（かたらい）2-3 ... ok.
+- 山手線ゲーム（かたらい）2-4 ... ok.
+- 山手線ゲーム（かたらい）2-5 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-1 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-2 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-3 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-4 ... ok.
+- Randomボットが動いているか1 ... ok.
+- Randomボットが動いているか2 ... ok.
+- Randomボットが動いているか_billing ... ok.
+- eスポーツ ... ok.
+- 半端ないって ... ok.
+- おっさんずラブ ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 心理テスト開始 ... ok.
+- 心理テストジャンル選択 ... ok.
+- 心理テスト回答選択 ... ok.
+- 心理テスト強制終了 ... ok.
+Testing bot KATARAI_ChattingRandomTeinei
+- 【丁寧】パターン発話テスト1-1 ... ok.
+- 【丁寧】パターン発話テスト1-2 ... ok.
+- 【丁寧】パターン発話テスト2-1 ... ok.
+- 【丁寧】パターン発話テスト2-2 ... ok.
+- システムPDB発話テスト1 ... ok.
+- システムPDB発話テスト2 ... ok.
+- 知識QA1テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA2テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA3テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA4テスト（検索型の結果が出力されないことを確認） ... ok.
+- 知識QA5テスト（検索型の結果が出力されないことを確認） ... ok.
+- wiki型発話テスト1(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- wiki型発話テスト2(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 人手作成発話_doushi-1_2テスト※基礎解析がないとNG ... ok.
+- 人手作成発話_simple-1テスト ... ok.
+- 人手作成発話_simple-2テスト ... ok.
+- 人手作成発話_new_wordsテスト ... ok.
+- 人手作成発話_不適切発話削除テスト1 ... ok.
+- 人手作成発話_不適切発話削除テスト2 ... ok.
+- 人手作成発話_不適切発話削除テスト3 ... ok.
+- ユーザプロフィール入力チェック（nickname） ... ok.
+- ユーザプロフィール入力チェック（sex） ... ok.
+- ユーザプロフィール入力チェック（bloodtype） ... ok.
+- ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- ユーザプロフィール入力チェック（age） ... ok.
+- ユーザプロフィール入力チェック（constellations） ... ok.
+- ユーザプロフィール入力チェック（place） ... ok.
+- 雑談RDS発話テスト1※基礎解析がないとNG ... ok.
+- 雑談RDS発話テスト2※基礎解析がないとNG ... ok.
+- 雑談RDS発話テスト3※基礎解析がないとNG ... ok.
+- 雑談RDS発話テスト4※基礎解析がないとNG ... ok.
+- 雑談RDS発話テスト5※基礎解析がないとNG ... ok.
+- 【プロフィール】デフォルトキャラクタ ... ok.
+- 【プロフィール】akachanキャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】kansaiキャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】surala2キャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- しりとりテスト01（開始） ... ok.
+- しりとりテスト01-1 ... ok.
+- しりとりテスト01-2 ... ok.
+- しりとりテスト01-3 ... ok.
+- しりとりテスト01（終了） ... ok.
+- しりとりテスト02（開始） ... ok.
+- しりとりテスト02-1 ... ok.
+- しりとりテスト02-2 ... ok.
+- しりとりテスト02-3 ... ok.
+- しりとりテスト02（終了） ... ok.
+- しりとりテスト03（開始） ... ok.
+- しりとりテスト03-1 ... ok.
+- しりとりテスト03-2 ... ok.
+- しりとりテスト03-3 ... ok.
+- しりとりテスト03（終了） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（sex） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【funassi/別ルート有】ーザプロフィール入力チェック（age） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（place） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（sex） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（age） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（place） ... ok.
+- 【uranai】質問応答チェック1 ... ok.
+- 【uranai】質問応答チェック2 ... ok.
+- 【uranai】質問応答チェック3 ... ok.
+- 【uranai】質問応答チェック4 ... ok.
+- 【uranai】質問応答チェック5 ... ok.
+- 【teacher】質問応答チェック1 ... ok.
+- 【teacher】質問応答チェック2 ... ok.
+- 【teacher】質問応答チェック3 ... ok.
+- 【teacher】質問応答チェック4 ... ok.
+- 【teacher】質問応答チェック5 ... ok.
+- 山手線ゲーム（かたらい）1-1 ... ok.
+- 山手線ゲーム（かたらい）1-2 ... ok.
+- 山手線ゲーム（かたらい）1-3 ... ok.
+- 山手線ゲーム（かたらい）1-4 ... ok.
+- 山手線ゲーム（かたらい）1-5 ... ok.
+- 山手線ゲーム（かたらい）2-1 ... ok.
+- 山手線ゲーム（かたらい）2-2 ... ok.
+- 山手線ゲーム（かたらい）2-3 ... ok.
+- 山手線ゲーム（かたらい）2-4 ... ok.
+- 山手線ゲーム（かたらい）2-5 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-1 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-2 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-3 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-4 ... ok.
+- t=billing向けRandomTeineiボットが動いているか ... ok.
+- eスポーツ ... ok.
+- 半端ないって ... ok.
+- おっさんずラブ ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 心理テスト開始 ... ok.
+- 心理テストジャンル選択 ... ok.
+- 心理テスト回答選択 ... ok.
+- 心理テスト強制終了 ... ok.
+Testing bot KATARAI_ChattingTeinei
+- 【丁寧】パターン発話テスト1-1 ... ok.
+- 【丁寧】パターン発話テスト1-2 ... ok.
+- 【丁寧】パターン発話テスト2-1 ... ok.
+- 【丁寧】パターン発話テスト2-2 ... ok.
+- システムPDB発話テスト1 ... ok.
+- システムPDB発話テスト2 ... ok.
+- 知識QA1テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA2テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA3テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA4テスト（検索型の結果が出力されないことを確認） ... ok.
+- 知識QA5テスト（検索型の結果が出力されないことを確認） ... ok.
+- wiki型発話テスト1(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- wiki型発話テスト2(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 人手作成発話_doushi-1_2テスト※基礎解析がないとNG ... ok.
+- 人手作成発話_simple-1テスト ... ok.
+- 人手作成発話_simple-2テスト ... ok.
+- 人手作成発話_new_wordsテスト ... ok.
+- 人手作成発話_不適切発話削除テスト1 ... ok.
+- 人手作成発話_不適切発話削除テスト2 ... ok.
+- 人手作成発話_不適切発話削除テスト3 ... ok.
+- ユーザプロフィール入力チェック（nickname） ... ok.
+- ユーザプロフィール入力チェック（sex） ... ok.
+- ユーザプロフィール入力チェック（bloodtype） ... ok.
+- ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- ユーザプロフィール入力チェック（age） ... ok.
+- ユーザプロフィール入力チェック（constellations） ... ok.
+- ユーザプロフィール入力チェック（place） ... ok.
+- 雑談RDS発話テスト1※基礎解析がないとNG ... ok.
+- 雑談RDS発話テスト2※基礎解析がないとNG ... ok.
+- 雑談RDS発話テスト3※基礎解析がないとNG ... ok.
+- 雑談RDS発話テスト4※基礎解析がないとNG ... ok.
+- 雑談RDS発話テスト5※基礎解析がないとNG ... ok.
+- 【プロフィール】デフォルトキャラクタ ... ok.
+- 【プロフィール】akachanキャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】kansaiキャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】surala2キャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（sex） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【funassi/別ルート有】ーザプロフィール入力チェック（age） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（place） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（sex） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（age） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（place） ... ok.
+- 【uranai】質問応答チェック1 ... ok.
+- 【uranai】質問応答チェック2 ... ok.
+- 【uranai】質問応答チェック3 ... ok.
+- 【uranai】質問応答チェック4 ... ok.
+- 【uranai】質問応答チェック5 ... ok.
+- 【teacher】質問応答チェック1 ... ok.
+- 【teacher】質問応答チェック2 ... ok.
+- 【teacher】質問応答チェック3 ... ok.
+- 【teacher】質問応答チェック4 ... ok.
+- 【teacher】質問応答チェック5 ... ok.
+- 山手線ゲーム（かたらい）1-1 ... ok.
+- 山手線ゲーム（かたらい）1-2 ... ok.
+- 山手線ゲーム（かたらい）1-3 ... ok.
+- 山手線ゲーム（かたらい）1-4 ... ok.
+- 山手線ゲーム（かたらい）1-5 ... ok.
+- 山手線ゲーム（かたらい）2-1 ... ok.
+- 山手線ゲーム（かたらい）2-2 ... ok.
+- 山手線ゲーム（かたらい）2-3 ... ok.
+- 山手線ゲーム（かたらい）2-4 ... ok.
+- 山手線ゲーム（かたらい）2-5 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-1 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-2 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-3 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-4 ... ok.
+- しりとりテスト01（開始） ... ok.
+- しりとりテスト01-1 ... ok.
+- しりとりテスト01-2 ... ok.
+- しりとりテスト01-3 ... ok.
+- しりとりテスト01（終了） ... ok.
+- しりとりテスト02（開始） ... ok.
+- しりとりテスト02-1 ... ok.
+- しりとりテスト02-2 ... ok.
+- しりとりテスト02-3 ... ok.
+- しりとりテスト02（終了） ... ok.
+- しりとりテスト03（開始） ... ok.
+- しりとりテスト03-1 ... ok.
+- しりとりテスト03-2 ... ok.
+- しりとりテスト03-3 ... ok.
+- しりとりテスト03（終了） ... ok.
+- eスポーツ ... ok.
+- 半端ないって ... ok.
+- おっさんずラブ ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 心理テスト開始 ... ok.
+- 心理テストジャンル選択 ... ok.
+- 心理テスト回答選択 ... ok.
+- 心理テスト強制終了 ... ok.
+Testing bot KATARAI_PatternIndex_PartialFalse_dDs
+Testing bot KATARAI_PatternIndex_PartialFalse_dDsTeinei
+Testing bot KATARAI_Pdb
+Testing bot KATARAI_PdbT
+Testing bot KATARAI_RandomTalk
+Testing bot KATARAI_Shiritori
+Testing bot KATARAI_SimpleTalkAWord
+Testing bot KATARAI_SimpleTalkWordsdDs
+Testing bot KATARAI_UpdbUttIndex
+Testing bot KATARAI_VersatileIndex2
+Testing bot KATARAI_VersatileIndexdDs
+Testing bot KATARAI_ChattingMoreUserInfo
+- パターン発話テスト1-1 ... ok.
+- パターン発話テスト1-2 ... ok.
+- パターン発話テスト2-1 ... ok.
+- パターン発話テスト2-2 ... ok.
+- システムPDB発話テスト1 ... ok.
+- システムPDB発話テスト2 ... ok.
+- 知識QA1テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA2テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA3テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA4テスト（検索型の結果が出力されないことを確認） ... ok.
+- 知識QA5テスト（検索型の結果が出力されないことを確認） ... ok.
+- wiki型発話テスト1(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- wiki型発話テスト2(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 人手作成発話_doushi-1_2テスト※基礎解析がないとNG ... ok.
+- 人手作成発話_simple-1テスト ... ok.
+- 人手作成発話_simple-2テスト ... ok.
+- 人手作成発話_new_wordsテスト ... ok.
+- 人手作成発話_不適切発話削除テスト1 ... ok.
+- 人手作成発話_不適切発話削除テスト2 ... ok.
+- 人手作成発話_不適切発話削除テスト3 ... ok.
+- ユーザプロフィール入力チェック（nickname） ... ok.
+- ユーザプロフィール入力チェック（sex） ... ok.
+- ユーザプロフィール入力チェック（bloodtype） ... ok.
+- ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- ユーザプロフィール入力チェック（age） ... ok.
+- ユーザプロフィール入力チェック（constellations） ... ok.
+- ユーザプロフィール入力チェック（place） ... ok.
+- 【語尾】デフォルトキャラクタ ... ok.
+- 【語尾】akachanキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】burikkoキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】bushiキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】ehime1キャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】ehime2キャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】ehime3キャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】fukushimaキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】gyaruキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】hakataキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】kansaiキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】maikoキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】mieキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】surala2キャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】akachanキャラクタ_おはよう御座います※基礎解析がないとNG ... ok.
+- 【語尾】burikkoキャラクタ_おはよう御座います※基礎解析がないとNG ... ok.
+- 【語尾】bushiキャラクタ_おはよう御座います※基礎解析がないとNG ... ok.
+- 【語尾】ehime1キャラクタ_ありがとう御座います※基礎解析がないとNG ... ok.
+- 【語尾】ehime2キャラクタ_ありがとう御座います※基礎解析がないとNG ... ok.
+- 【語尾】ehime3キャラクタ_ありがとう御座います※基礎解析がないとNG ... ok.
+- 【語尾】fukushimaキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】gyaruキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】hakataキャラクタ_こんばんは※基礎解析がないとNG ... ok.
+- 【語尾】kansaiキャラクタ_お疲れ様でございます※基礎解析がないとNG ... ok.
+- 【語尾】maikoキャラクタ_おやすみです※基礎解析がないとNG ... ok.
+- 【語尾】mieキャラクタ_おやすみです※基礎解析がないとNG ... ok.
+- 【語尾】surala2キャラクタ_〜ないで欲しいです※基礎解析がないとNG ... ok.
+- 【プロフィール】デフォルトキャラクタ ... ok.
+- 【プロフィール】akachanキャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】kansaiキャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】surala2キャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- しりとりテスト01（開始） ... ok.
+- しりとりテスト01-1 ... ok.
+- しりとりテスト01-2 ... ok.
+- しりとりテスト01-3 ... ok.
+- しりとりテスト01（終了） ... ok.
+- しりとりテスト02（開始） ... ok.
+- しりとりテスト02-1 ... ok.
+- しりとりテスト02-2 ... ok.
+- しりとりテスト02-3 ... ok.
+- しりとりテスト02（終了） ... ok.
+- しりとりテスト03（開始） ... ok.
+- しりとりテスト03-1 ... ok.
+- しりとりテスト03-2 ... ok.
+- しりとりテスト03-3 ... ok.
+- しりとりテスト03（終了） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（sex） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【funassi/別ルート有】ーザプロフィール入力チェック（age） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（place） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（sex） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（age） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（place） ... ok.
+- 【uranai】質問応答チェック1 ... ok.
+- 【uranai】質問応答チェック2 ... ok.
+- 【uranai】質問応答チェック3 ... ok.
+- 【uranai】質問応答チェック4 ... ok.
+- 【uranai】質問応答チェック5 ... ok.
+- 【teacher】質問応答チェック1 ... ok.
+- 【teacher】質問応答チェック2 ... ok.
+- 【teacher】質問応答チェック3 ... ok.
+- 【teacher】質問応答チェック4 ... ok.
+- 【teacher】質問応答チェック5 ... ok.
+- 山手線ゲーム（かたらい）1-1 ... ok.
+- 山手線ゲーム（かたらい）1-2 ... ok.
+- 山手線ゲーム（かたらい）1-3 ... ok.
+- 山手線ゲーム（かたらい）1-4 ... ok.
+- 山手線ゲーム（かたらい）1-5 ... ok.
+- 山手線ゲーム（かたらい）2-1 ... ok.
+- 山手線ゲーム（かたらい）2-2 ... ok.
+- 山手線ゲーム（かたらい）2-3 ... ok.
+- 山手線ゲーム（かたらい）2-4 ... ok.
+- 山手線ゲーム（かたらい）2-5 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-1 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-2 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-3 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-4 ... ok.
+- eスポーツ ... ok.
+- 半端ないって ... ok.
+- おっさんずラブ ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 心理テスト開始 ... ok.
+- 心理テストジャンル選択 ... ok.
+- 心理テスト回答選択 ... ok.
+- 心理テスト強制終了 ... ok.
+Testing bot KATARAI_Kokon
+- 【言葉遊び】山手線ゲーム1-1 ... ok.
+- 【言葉遊び】山手線ゲーム1-2 ... ok.
+- 【言葉遊び】山手線ゲーム1-3 ... ok.
+- 【言葉遊び】山手線ゲーム1-4 ... ok.
+- 【言葉遊び】山手線ゲーム1-5（終了） ... ok.
+- 【言葉遊び】山手線ゲーム2-1 ... ok.
+- 【言葉遊び】山手線ゲーム2-2 ... ok.
+- 【言葉遊び】山手線ゲーム2-3 ... ok.
+- 【言葉遊び】山手線ゲーム2-4 ... ok.
+- 【言葉遊び】山手線ゲーム2-5 ... ok.
+- 【言葉遊び】山手線ゲーム3-1 ... ok.
+- 【言葉遊び】山手線ゲーム3-2 ... ok.
+- 【言葉遊び】山手線ゲーム4-1 ... ok.
+- 【言葉遊び】山手線ゲーム4-2 ... ok.
+- 【言葉遊び】山手線ゲーム4-3 ... ok.
+- 【言葉遊び】山手線ゲーム4-4 ... ok.
+- 【言葉遊び】山手線ゲーム5-1 ... ok.
+- 【言葉遊び】山手線ゲーム5-2 ... ok.
+- 【言葉遊び】山手線ゲーム5-3 ... ok.
+- 【言葉遊び】山手線ゲーム5-4 ... ok.
+- 【言葉遊び】山手線ゲーム5-5 ... ok.
+- 【言葉遊び】山手線ゲーム5-6 ... ok.
+- 【言葉遊び】山手線ゲーム6-1 ... ok.
+- 【言葉遊び】山手線ゲーム6-2 ... ok.
+- 【言葉遊び】山手線ゲーム6-3 ... ok.
+- 【言葉遊び】山手線ゲーム6-4 ... ok.
+- 【言葉遊び】山手線ゲーム6-5 ... ok.
+- 【言葉遊び】山手線ゲーム7-1 ... ok.
+- 【言葉遊び】山手線ゲーム7-2 ... ok.
+- 【言葉遊び】山手線ゲーム7-3 ... ok.
+- 【言葉遊び】山手線ゲーム7-4 ... ok.
+- 【言葉遊び】山手線ゲーム7-5 ... ok.
+- 【言葉遊び】山手線ゲーム7-6 ... ok.
+- 【言葉遊び】山手線ゲーム7-7 ... ok.
+- 【言葉遊び】山手線ゲーム7-8 ... ok.
+- 【言葉遊び】山手線ゲーム7-9 ... ok.
+Testing bot KATARAI_Kaerema
+- 【言葉遊び】いくつ言えるかなゲーム1-1 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-2 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-3 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-4 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-5（間違い） ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-6（終了） ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム2-1 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム2-2 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム2-3 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム3-1 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム3-2 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム3-3 ... ok.
+Testing bot KATARAI_NAZOKAKE
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ4-1 ... ok.
+- 【言葉遊び】なぞかけ4-2 ... ok.
+- 【言葉遊び】なぞかけ5-1 ... ok.
+- 【言葉遊び】なぞかけ5-2 ... ok.
+- 【言葉遊び】なぞかけ6-1 ... ok.
+- 【言葉遊び】なぞかけ6-2 ... ok.
+Testing bot KATARAI_HYAKUNIN
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】百人一首3-3 ... ok.
+- 【言葉遊び】百人一首4-1 ... ok.
+- 【言葉遊び】百人一首4-2 ... ok.
+- 【言葉遊び】百人一首4-3 ... ok.
+- 【言葉遊び】百人一首4-4 ... ok.
+- 【言葉遊び】百人一首5-1 ... ok.
+- 【言葉遊び】百人一首5-2 ... ok.
+Testing bot KATARAI_Yamanotekaerema
+- 【言葉遊び】いくつ言えるかなゲーム1-1 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-2 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-3 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-4 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-5（間違い） ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム1-6（終了） ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム2-1 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム2-2 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム2-3 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム3-1 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム3-2 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム3-3 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-1 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-2 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-3 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-4 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-5 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-6 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-7 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-8 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-9 ... ok.
+- 【言葉遊び】いくつ言えるかなゲーム4-10 ... ok.
+Testing bot KATARAI_Yamanotekokon
+- 【言葉遊び】山手線ゲーム1-1 ... ok.
+- 【言葉遊び】山手線ゲーム1-2 ... ok.
+- 【言葉遊び】山手線ゲーム1-3 ... ok.
+- 【言葉遊び】山手線ゲーム1-4 ... ok.
+- 【言葉遊び】山手線ゲーム1-5（終了） ... ok.
+- 【言葉遊び】山手線ゲーム2-1 ... ok.
+- 【言葉遊び】山手線ゲーム2-2 ... ok.
+- 【言葉遊び】山手線ゲーム2-3 ... ok.
+- 【言葉遊び】山手線ゲーム3-1 ... ok.
+- 【言葉遊び】山手線ゲーム3-2 ... ok.
+- 【言葉遊び】山手線ゲーム3-3 ... ok.
+- 【言葉遊び】山手線ゲーム4-1 ... ok.
+- 【言葉遊び】山手線ゲーム4-2 ... ok.
+- 【言葉遊び】山手線ゲーム4-3 ... ok.
+- 【言葉遊び】山手線ゲーム5-1 ... ok.
+- 【言葉遊び】山手線ゲーム5-2 ... ok.
+- 【言葉遊び】山手線ゲーム5-3 ... ok.
+- 【言葉遊び】山手線ゲーム6-1 ... ok.
+- 【言葉遊び】山手線ゲーム6-2 ... ok.
+- 【言葉遊び】山手線ゲーム6-3 ... ok.
+- 【言葉遊び】山手線ゲーム7-1 ... ok.
+- 【言葉遊び】山手線ゲーム7-2 ... ok.
+- 【言葉遊び】山手線ゲーム7-3 ... ok.
+- 【言葉遊び】山手線ゲーム8-1 ... ok.
+- 【言葉遊び】山手線ゲーム8-2 ... ok.
+- 【言葉遊び】山手線ゲーム8-3 ... ok.
+- 【言葉遊び】山手線ゲーム8-4 ... ok.
+- 【言葉遊び】山手線ゲーム8-5 ... ok.
+- 【言葉遊び】山手線ゲーム8-6 ... ok.
+- 【言葉遊び】山手線ゲーム8-7 ... ok.
+- 【言葉遊び】山手線ゲーム8-8 ... ok.
+- 【言葉遊び】山手線ゲーム8-9 ... ok.
+- 【言葉遊び】山手線ゲーム8-10 ... ok.
+Testing bot KATARAI_FixedScenario
+Testing bot KATARAI_ChattingNoUttDB
+- パターン発話テスト1-1 ... ok.
+- パターン発話テスト1-2 ... ok.
+- パターン発話テスト2-1 ... ok.
+- パターン発話テスト2-2 ... ok.
+- システムPDB発話テスト1 ... ok.
+- システムPDB発話テスト2 ... ok.
+- 知識QA1テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA2テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA3テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 知識QA4テスト（検索型の結果が出力されないことを確認） ... ok.
+- 知識QA5テスト（検索型の結果が出力されないことを確認） ... ok.
+- wiki型発話テスト1(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- wiki型発話テスト2(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- 人手作成発話_doushi-1_2テスト※基礎解析がないとNG ... ok.
+- 人手作成発話_simple-1テスト ... ok.
+- 人手作成発話_simple-2テスト ... ok.
+- 人手作成発話_new_wordsテスト ... ok.
+- 人手作成発話_不適切発話削除テスト1 ... ok.
+- 人手作成発話_不適切発話削除テスト2 ... ok.
+- 人手作成発話_不適切発話削除テスト3 ... ok.
+- ユーザプロフィール入力チェック（nickname） ... ok.
+- ユーザプロフィール入力チェック（sex） ... ok.
+- ユーザプロフィール入力チェック（bloodtype） ... ok.
+- ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- ユーザプロフィール入力チェック（age） ... ok.
+- ユーザプロフィール入力チェック（constellations） ... ok.
+- ユーザプロフィール入力チェック（place） ... ok.
+- 【プロフィール】デフォルトキャラクタ ... ok.
+- 【プロフィール】akachanキャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】kansaiキャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】surala2キャラクタ※基礎解析がないとNG ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】defaultdemoキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】uranaiキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【プロフィール】teacherキャラクタ※基礎解析がないとNG？ ... ok.
+- 【語尾】デフォルトキャラクタ ... ok.
+- 【語尾】akachanキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】burikkoキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】bushiキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】ehime1キャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】ehime2キャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】ehime3キャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】fukushimaキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】gyaruキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】hakataキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】kansaiキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】maikoキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】mieキャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】surala2キャラクタ※基礎解析がないとNG ... ok.
+- 【語尾】akachanキャラクタ_おはよう御座います※基礎解析がないとNG ... ok.
+- 【語尾】burikkoキャラクタ_おはよう御座います※基礎解析がないとNG ... ok.
+- 【語尾】bushiキャラクタ_おはよう御座います※基礎解析がないとNG ... ok.
+- 【語尾】ehime1キャラクタ_ありがとう御座います※基礎解析がないとNG ... ok.
+- 【語尾】ehime2キャラクタ_ありがとう御座います※基礎解析がないとNG ... ok.
+- 【語尾】ehime3キャラクタ_ありがとう御座います※基礎解析がないとNG ... ok.
+- 【語尾】fukushimaキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】gyaruキャラクタ_こんにちは※基礎解析がないとNG ... ok.
+- 【語尾】hakataキャラクタ_こんばんは※基礎解析がないとNG ... ok.
+- 【語尾】kansaiキャラクタ_お疲れ様でございます※基礎解析がないとNG ... ok.
+- 【語尾】maikoキャラクタ_おやすみです※基礎解析がないとNG ... ok.
+- 【語尾】mieキャラクタ_おやすみです※基礎解析がないとNG ... ok.
+- 【語尾】surala2キャラクタ_〜ないで欲しいです※基礎解析がないとNG ... ok.
+- しりとりテスト01（開始） ... ok.
+- しりとりテスト01-1 ... ok.
+- しりとりテスト01-2 ... ok.
+- しりとりテスト01-3 ... ok.
+- しりとりテスト01（終了） ... ok.
+- しりとりテスト02（開始） ... ok.
+- しりとりテスト02-1 ... ok.
+- しりとりテスト02-2 ... ok.
+- しりとりテスト02-3 ... ok.
+- しりとりテスト02（終了） ... ok.
+- しりとりテスト03（開始） ... ok.
+- しりとりテスト03-1 ... ok.
+- しりとりテスト03-2 ... ok.
+- しりとりテスト03-3 ... ok.
+- しりとりテスト03（終了） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（sex） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【funassi/別ルート有】ーザプロフィール入力チェック（age） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【funassi/別ルート有】ユーザプロフィール入力チェック（place） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（nickname） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（sex） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（bloodtype） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（birthdateYMD） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（age） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（constellations） ... ok.
+- 【ojaru】ユーザプロフィール入力チェック（place） ... ok.
+- 【uranai】質問応答チェック1 ... ok.
+- 【uranai】質問応答チェック2 ... ok.
+- 【uranai】質問応答チェック3 ... ok.
+- 【uranai】質問応答チェック4 ... ok.
+- 【uranai】質問応答チェック5 ... ok.
+- 【teacher】質問応答チェック1 ... ok.
+- 【teacher】質問応答チェック2 ... ok.
+- 【teacher】質問応答チェック3 ... ok.
+- 【teacher】質問応答チェック4 ... ok.
+- 【teacher】質問応答チェック5 ... ok.
+- 山手線ゲーム（かたらい）1-1 ... ok.
+- 山手線ゲーム（かたらい）1-2 ... ok.
+- 山手線ゲーム（かたらい）1-3 ... ok.
+- 山手線ゲーム（かたらい）1-4 ... ok.
+- 山手線ゲーム（かたらい）1-5 ... ok.
+- 山手線ゲーム（かたらい）2-1 ... ok.
+- 山手線ゲーム（かたらい）2-2 ... ok.
+- 山手線ゲーム（かたらい）2-3 ... ok.
+- 山手線ゲーム（かたらい）2-4 ... ok.
+- 山手線ゲーム（かたらい）2-5 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-1 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-2 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-3 ... ok.
+- いくつ言えるかなゲーム（かたらい）1-4 ... ok.
+- 雑談RDS発話がでないかのテスト1 ... ok.
+- 雑談RDS発話がでないかのテスト2 ... ok.
+- 雑談RDS発話がでないかのテスト3 ... ok.
+- 雑談RDS発話がでないかのテスト4 ... ok.
+- 雑談RDS発話がでないかのテスト5 ... ok.
+- eスポーツ ... ok.
+- 半端ないって ... ok.
+- おっさんずラブ ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-1 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-2 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-3 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-4 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-5 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-6 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首1-7 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-1 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-2 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-3 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首2-4 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-1 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】百人一首3-2 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-1 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ1-2 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-1 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ2-2 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-1 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 【言葉遊び】なぞかけ3-2 ... ok.
+- 心理テスト開始 ... ok.
+- 心理テストジャンル選択 ... ok.
+- 心理テスト回答選択 ... ok.
+- 心理テスト強制終了 ... ok.
+Testing bot KATARAI_YesNoRed
+Testing bot KATARAI_NgWord
+Testing bot KATARAI_PsychologicalTest
+- 心理テスト開始 ... ok.
+- 心理テストジャンル選択 ... ok.
+- 心理テスト回答選択 ... ok.
+- 心理テスト強制終了 ... ok.
+Testing bot KATARAI_HPTopPageBot
+- かたらいHPお試しボットテスト_init1 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(変換なし1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(変換なし2) ... ok.
+- かたらいHPお試しボットテスト_知識QAテスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- かたらいHPお試しボットテスト_システムPDB発話テスト ... ok.
+- かたらいHPお試しボットテスト_wiki型発話テスト(KATARAI_ChishikiQA削除のため、雑談で応答していることを確認) ... ok.
+- かたらいHPお試しボットテスト_しりとり1 ... ok.
+- かたらいHPお試しボットテスト_しりとり2 ... ok.
+- かたらいHPお試しボットテスト_しりとり3 ... ok.
+- かたらいHPお試しボットテスト_山手線ゲーム1 ... ok.
+- かたらいHPお試しボットテスト_山手線ゲーム2 ... ok.
+- かたらいHPお試しボットテスト_山手線ゲーム3 ... ok.
+- かたらいHPお試しボットテスト_山手線ゲーム4 ... ok.
+- かたらいHPお試しボットテスト_いくつ言えるかなゲーム1 ... ok.
+- かたらいHPお試しボットテスト_いくつ言えるかなゲーム2 ... ok.
+- かたらいHPお試しボットテスト_いくつ言えるかなゲーム3 ... ok.
+- かたらいHPお試しボットテスト_いくつ言えるかなゲーム4 ... ok.
+- かたらいHPお試しボットテスト_百人一首1 ... ok.
+- かたらいHPお試しボットテスト_百人一首2 ... ok.
+- かたらいHPお試しボットテスト_百人一首3 ... ok.
+- かたらいHPお試しボットテスト_百人一首4 ... ok.
+- かたらいHPお試しボットテスト_百人一首5 ... ok.
+- かたらいHPお試しボットテスト_なぞかけ1 ... ok.
+- かたらいHPお試しボットテスト_なぞかけ2 ... ok.
+- かたらいHPお試しボットテスト_心理テスト1 ... ok.
+- かたらいHPお試しボットテスト_心理テスト2 ... ok.
+- かたらいHPお試しボットテスト_心理テスト3 ... ok.
+- かたらいHPお試しボットテスト_心理テスト4 ... ok.
+- かたらいHPお試しボットテスト_init2 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(赤ちゃん風1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(赤ちゃん風2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(赤ちゃん風1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(赤ちゃん風2) ... ok.
+- かたらいHPお試しボットテスト_init3 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(ぶりっ子風1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(ぶりっ子風2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(ぶりっ子風1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(ぶりっ子風2) ... ok.
+- かたらいHPお試しボットテスト_init4 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(ギャル風1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(ギャル風2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(ギャル風1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(ギャル風2) ... ok.
+- かたらいHPお試しボットテスト_init5 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(武士風1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(武士風2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(武士風1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(武士風2) ... ok.
+- かたらいHPお試しボットテスト_init6 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(お嬢様風1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(お嬢様風2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(お嬢様風1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(お嬢様風2) ... ok.
+- かたらいHPお試しボットテスト_init7 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(舞妓風1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(舞妓風2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(舞妓風1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(舞妓風2) ... ok.
+- かたらいHPお試しボットテスト_init8 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(関西弁1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(関西弁2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(関西弁1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(関西弁2) ... ok.
+- かたらいHPお試しボットテスト_init9 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(博多弁1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(博多弁2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(博多弁1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(博多弁2) ... ok.
+- かたらいHPお試しボットテスト_init10 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(福島弁1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(福島弁2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(福島弁1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(福島弁2) ... ok.
+- かたらいHPお試しボットテスト_init11 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(三重弁1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(三重弁2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(三重弁1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(三重弁2) ... ok.
+- かたらいHPお試しボットテスト_init12 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(愛媛県今治弁1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(愛媛県今治弁2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(愛媛県今治弁1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(愛媛県今治弁2) ... ok.
+- かたらいHPお試しボットテスト_init13 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(愛媛県四国中央市弁1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(愛媛県四国中央市弁2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(愛媛県四国中央市弁1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(愛媛県四国中央市弁2) ... ok.
+- かたらいHPお試しボットテスト_init14 ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(愛媛県松山市弁1) ... ok.
+- かたらいHPお試しボットテスト_キャラクター設定(愛媛県松山市弁2) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(愛媛県松山市弁1) ... ok.
+- かたらいHPお試しボットテスト_語尾変換(愛媛県松山市弁2) ... ok.
