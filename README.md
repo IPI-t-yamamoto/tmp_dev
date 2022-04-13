@@ -1,2 +1,4 @@
 # tmp_dev
-一時的に使用
+
+* 2022/04/13
+    1. git tutorial
